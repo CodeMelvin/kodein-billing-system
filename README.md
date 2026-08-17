@@ -1,8 +1,8 @@
-# Kodein Billing System
+﻿# ≡ƒº╛ Kodein Billing System
 
-A billing, subscription, and invoicing platform built during my time at Kodein, an Indonesian IT company based in Jakarta.
+> A billing, subscription, and invoicing management platform built during my time at **Kodein**.
 
-## Screenshots
+## ≡ƒô╕ Screenshots
 
 | Login | Dashboard | Billing |
 |---|---|---|
@@ -12,52 +12,64 @@ A billing, subscription, and invoicing platform built during my time at Kodein, 
 |---|---|---|
 | <img src="screenshots/orders.png" width="220"/> | <img src="screenshots/subscriptions.png" width="220"/> | <img src="screenshots/products.png" width="220"/> |
 
-Screenshots are also available in the [`screenshots/`](screenshots/) folder.
+> Screenshots are also available in the [`screenshots/`](screenshots/) folder for a closer look.
 
-## What this is
+---
 
-Kodein Billing System replaces a spreadsheet-based workflow with a single dashboard for managing the full lifecycle of a client project: order approval, progress tracking, recurring subscriptions, and invoicing. The team can see what is in progress, what needs approval, and what is due for payment without asking around.
+## ≡ƒÄ» What Is Kodein Billing System
 
-This is a demo build. All data shown is sample data for illustration only.
+Kodein Billing System is an internal platform that gives the team one place to manage the full lifecycle of a client project ΓÇö from order approval and progress tracking, to recurring subscriptions and invoicing.
 
-## Why it was built
+It replaces a manual, spreadsheet-based workflow with a single dashboard where the team can see what is in progress, what needs approval, and what is due for payment ΓÇö all in real time.
 
-Kodein designs, develops, and hosts websites and mobile applications for businesses across Indonesia. With several projects running at once, tracking down payments, deadlines, and recurring hosting fees became a job of its own. This platform gives the team one place to keep that under control. You can see examples of Kodein's work on their [portfolio](https://kodein.co.id/portofolio).
+> **Demo build.** All data shown is sample data for illustrative purposes only.
 
-## Features
+---
 
-- Project management with configurable down payments, progress milestones, and file attachments
-- Recurring subscriptions with weekly, monthly, and annual billing periods, plus a grace period, suspension, and re-billing lifecycle
-- Automatic bill generation, invoice and proof-of-payment uploads, approve, decline, and refund workflows, with tax support
-- Invoice PDF generation on demand
-- In-app notifications for approvals, renewals, and expiring bills
-- Role-based access for admins, finance, marketing, clients, and a read-only viewer
+## ≡ƒÅó Why This Was Built
 
-## Built with
+This platform was developed to support the internal operations of [**Kodein**](https://kodein.co.id) ΓÇö an Indonesian IT company that designs, develops, and hosts websites and mobile applications for businesses across Indonesia. See [Kodein's portfolio](https://kodein.co.id/portofolio) for examples of the company's work.
 
-- Next.js (App Router), React, TypeScript
-- Tailwind CSS
-- PostgreSQL
-- JWT session handling with rotating refresh tokens
-- Vercel for hosting and scheduled jobs
+---
 
-## Live demo
+## Γ£¿ Features
 
-The live demo runs at [https://kodein-billing-system.vercel.app](https://kodein-billing-system.vercel.app).
+- ≡ƒôª **Project Management** ΓÇö create and approve project orders with configurable down payments, track progress milestones, and attach files along the way
+- ≡ƒöü **Subscription Management** ΓÇö recurring subscriptions with weekly / monthly / annual billing periods, automatic renewal tracking, and a full grace-period ΓåÆ suspension ΓåÆ re-billing lifecycle
+- ≡ƒÆ│ **Billing & Payments** ΓÇö automatic bill generation, invoice and proof-of-payment uploads, approve / decline / refund (credit note) workflows, and tax support
+- ≡ƒôä **Invoice PDF** ΓÇö generate a clean, secure invoice PDF on demand
+- ≡ƒöö **Notifications** ΓÇö in-app alerts for approvals, renewals, and expiring bills
+- ≡ƒæÑ **Role-based Access** ΓÇö roles for admin, finance, marketing, client, and a read-only viewer
+
+---
+
+## ≡ƒ¢á Built With
+
+- ΓÜ¢∩╕Å **Next.js** ΓÇö App Router, React, TypeScript
+- ≡ƒÄ¿ **Tailwind CSS** ΓÇö UI styling
+- ≡ƒùä∩╕Å **PostgreSQL** ΓÇö relational database
+- ≡ƒöÉ **JWT** ΓÇö secure session handling with rotating tokens
+- Γÿü∩╕Å **Vercel** ΓÇö hosting and scheduled jobs
+
+---
+
+## ≡ƒÜÇ Live Demo
+
+Open the live demo: **[https://kodein-billing-system.vercel.app](https://kodein-billing-system.vercel.app)**
 
 One account is open for public testing, and it is read-only:
 
 | Role | Email | Password |
 |---|---|---|
-| Viewer | `viewer.demo.BTp2@example.com` | `PWzvj6-DH9QxG-7PP7mc` |
+| Viewer | `viewer@example.com` | `Demo@123` |
 
-The viewer can browse every module but cannot create, edit, delete, approve, or upload anything. The other roles listed below are not available for public login.
+The viewer can browse every module but cannot create, edit, delete, approve, or upload anything.
 
-## Roles
+### ≡ƒæÑ Roles
 
-The system supports five roles besides the viewer, each with its own scope. Credentials for these roles are deliberately not published; they belong to the internal team.
+The system supports five roles besides the viewer. Credentials for these roles are deliberately not published; they belong to the internal team.
 
-| Role | Can do |
+| Role | Capabilities |
 |---|---|
 | Superadmin | Full access across every module, including user management and deletions |
 | Admin | Manages most modules; user management is limited to creating accounts |
@@ -66,14 +78,20 @@ The system supports five roles besides the viewer, each with its own scope. Cred
 | Client | Sees only its own bills and orders |
 | Viewer | Read-only across every module; all action buttons are hidden |
 
-## Security
+---
 
-The codebase applies standard web security practices: bcrypt password hashing, httpOnly secure session cookies, rate limiting on authentication endpoints, parameterized SQL queries, validated file uploads, and access checks on every API route. No real data is stored; all records in the demo are fictitious.
+## ≡ƒöÆ Security
 
-## License
+Security best practices are applied throughout the platform ΓÇö from secure session management and access control on every endpoint, to safe file handling and hardened web headers.
 
-MIT. See the [LICENSE](LICENSE) file.
+---
 
-## Author
+## ≡ƒôä License
 
-Melvin ([@CodeMelvin](https://github.com/CodeMelvin))
+This project is licensed under the MIT License ΓÇö see the [LICENSE](LICENSE) file for details.
+
+---
+
+## ≡ƒæñ Author
+
+**Melvin** ([@CodeMelvin](https://github.com/CodeMelvin))
